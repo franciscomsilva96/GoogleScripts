@@ -13,7 +13,7 @@ function timeStamp(e) {
     var linha = e.range.getRow();
 
     // método para ir buscar a sheet e para adicionar new Date sempre que houver nova entrada de dados no range definido
-    if (coluna === 1 && linha > 1 && e.source.getActiveSheet().getName() === "dados") {
+    if (coluna === 1 && linha > 1) {
         // avalia inputs na coluna A e a partir da linha 2
         var data = new Date();
         e.source.getActiveSheet().getRange(linha, 3).setValue(data); // na coluna C dispõe a hora de registo

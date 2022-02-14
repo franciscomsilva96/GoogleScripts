@@ -14,7 +14,7 @@ function weekNum() {
     };
 
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet Name");
-    var cel = sheet.getRange(6, 10);
+    var cel = sheet.getRange("THE RANGE OF THE CELL YOU WANT TO CHANGE");
     var data = new Date();
     var weekNum = data.getWeek();
     console.log(weekNum);

@@ -10,7 +10,7 @@ function onEdit(e) {
 function changeValue(e) {
 
     //call your range 
-    var range = SpreadsheetApp.getActiveSheet().getRange('F1:F10');
+    var range = SpreadsheetApp.getActiveSheet().getRange('RANGE TEST HERE');
     var data = range.getValues();
     for (var i = 0; i < data.length; i++) { // map through the range
         var text = data[i][0].toString();     // 2D array of cell values
